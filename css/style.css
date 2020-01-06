@@ -1,0 +1,106 @@
+body {
+  background-color: #212529;
+  text-align: center;
+  font-family: 'Girassol', cursive;
+}
+
+input[type=text] {
+  width: 350px;
+  height: 30px;
+  background-color: #778899;
+  border: 1px solid #E0FFFF;
+  border-radius: 10px;
+}
+
+input[type=text]::placeholder {
+  text-align: center;
+  color: #E6E6FA;
+  font-family: 'Lato', sans-serif;
+}
+
+input[type=submit] {
+  width: 200px;
+  padding: 5px;
+  color: #66CDAA;
+  background-color: #708090;
+  border: 1px solid #E0FFFF;
+  border-radius: 5px;
+}
+
+.form-control {
+  padding: 5px;
+  margin-left: 150px;
+  margin-right: 150px;
+  border: 1px solid white;
+  background-color: #5F9EA0;
+  color: #FFFFFF;
+}
+
+.form-text {
+  padding: 5px;
+  font-size: 31px;
+  font-weight: bolder;
+  font-family: 'Cute Font', cursive;
+}
+
+.text-warning {
+  color: #FF0000;
+  font-family: 'Cute Font', cursive;
+  font-size: 50px;
+}
+
+.downbut {
+  background-color: #87CEEB;
+  font-family: 'Lato', sans-serif;
+  padding: 5px;
+  width: 150px;
+  border: 1px solid #E0FFFF;
+  border-radius: 5px;
+}
+
+.result {
+  padding: 5px;
+  margin-left: 150px;
+  margin-right: 150px;
+  border: 1px solid white;
+  background-color: #708090;
+  color: #FFFFFF;
+}
+
+#im0 {
+  padding: 15px;
+  width: 220px;
+  height: 180px;
+}
+
+#text {
+  font-family: 'Cute Font', cursive;
+  color: #FFFFFF;
+  font-size: 25px;
+}
+
+.about {
+  padding: 5px;
+  margin-left: 150px;
+  margin-right: 150px;
+  border: 1px solid white;
+  background-color: #708090;
+  color: #FFFFFF;
+}
+
+a {
+  color: #66CDAA;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #7FFFD4;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+vis {
+  color: #FFFFFF;
+  font-size: 20px;
+}
