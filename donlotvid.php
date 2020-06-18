@@ -17,7 +17,7 @@ function cURL($url) {
     <meta name="description" content="NyamuXpl0it | Rasyad Gantenx" />
     <meta name="keyword" content="Facebook, video, downloader, fbvideo" />
     <meta charset="utf-8" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Girassol|Lato|Cute+Font" rel="stylesheet">
   </head>
   <body>
