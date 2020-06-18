@@ -38,16 +38,10 @@ function cURL($url) {
       preg_match_all('/<li><a href="([^`]*?)" class="btn btn-default btn-blue">/', $paan, $ajg);
       preg_match_all('/<img src="([^`]*?)" \/>/', $paan, $coek);
       preg_match_all('/<p class="title">([^`]*?)<\/p>/', $paan, $bjir);
-      if(preg_match("/Convert/", $paan)) {
-        foreach($bjir[1] as $title) {
-          echo "<div class='result'>".$title."<br>";
-        }
-        foreach($coek[1] as $image) {
-          echo "<a href='".$fbvid."'><img src='".$image."' id='im0'></a><br>";
-        }
-        foreach($ajg[1] as $down) {
-          echo "<a href='".$down."'><button class='downbut'>Download Now</button>";
-        }
+      if(preg_match("/Convert/", $paan)) }
+        echo "<div class='result'>".$bjir[1][0]."<br>
+        <a href='".$fbvid."'><img src='".$coek[1][0]."' id='im0'></a><br>
+        <a href='".$ajg[1][0]."'><button class='downbut'>Download Now</button>";
       } else {
         echo "<p class='text-warning'>Can't get video</p>";
       }
