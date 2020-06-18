@@ -1,5 +1,5 @@
 <?php
-##
+#
 function cURL($url) {
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_URL, $url);
@@ -17,7 +17,7 @@ function cURL($url) {
     <meta name="description" content="NyamuXpl0it | Rasyad Gantenx" />
     <meta name="keyword" content="Facebook, video, downloader, fbvideo" />
     <meta charset="utf-8" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Girassol|Lato|Cute+Font" rel="stylesheet">
   </head>
   <body>
@@ -35,13 +35,12 @@ function cURL($url) {
       $fbvid = $_POST['video'];
       $paan = cURL("https://fbdownloader.net/download/?url=".$fbvid);
       // $bngsd = cURL($fbvid);
-      preg_match_all('/<li><a href="([^`]*?)" class="btn btn-default btn-blue">/', $paan, $ajg);
-      preg_match_all('/<img src="([^`]*?)" \/>/', $paan, $coek);
-      preg_match_all('/<p class="title">([^`]*?)<\/p>/', $paan, $bjir);
+      preg_match_all("/<li><a target=\"_blank\" rel=\"noreferrer no-follow\" href=\"([^`]*?)\"/", $paan, $ajg);
+      preg_match_all("/<img src=\"([^`]*?)\" \/>/", $paan, $coek);
       if(preg_match("/Convert/", $paan)) {
-        echo "<div class='result'>".$bjir[1][0]."<br>
+        echo "<div class='result'>Success get video<br>
         <a href='".$fbvid."'><img src='".$coek[1][0]."' id='im0'></a><br>
-        <a href='".$ajg[1][0]."'><button class='downbut'>Download Now</button>";
+        <a href='".$ajg[1][0]."'><button class='downbut'>Download video</button>";
       } else {
         echo "<p class='text-warning'>Can't get video</p>";
       }
