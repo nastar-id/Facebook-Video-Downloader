@@ -38,7 +38,7 @@ function cURL($url) {
       preg_match_all('/<li><a href="([^`]*?)" class="btn btn-default btn-blue">/', $paan, $ajg);
       preg_match_all('/<img src="([^`]*?)" \/>/', $paan, $coek);
       preg_match_all('/<p class="title">([^`]*?)<\/p>/', $paan, $bjir);
-      if(preg_match("/Convert/", $paan)) }
+      if(preg_match("/Convert/", $paan)) {
         echo "<div class='result'>".$bjir[1][0]."<br>
         <a href='".$fbvid."'><img src='".$coek[1][0]."' id='im0'></a><br>
         <a href='".$ajg[1][0]."'><button class='downbut'>Download Now</button>";
